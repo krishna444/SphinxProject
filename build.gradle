@@ -17,8 +17,10 @@ repositories {
 }
 
 dependencies {
-    compile project(':sphinx4-core')
-    compile project(':sphinx4-data')
+    //compile project(':sphinx4-core')
+    //compile project(':sphinx4-data')
+    api 'edu.cmu.sphinx:sphinx4-core:5prealpha-SNAPSHOT'
+    api 'edu.cmu.sphinx:sphinx4-data:5prealpha-SNAPSHOT'
     compile fileTree(dir:'libs', include:'jfxrt.jar')
     // This dependency is exported to consumers, that is to say found on their compile classpath.
     api 'org.apache.commons:commons-math3:3.6.1'
